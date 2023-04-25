@@ -1,11 +1,15 @@
 package shiftproject;
 
-public class Sale extends Market implements IUniversal{
+public class Sale extends Bargain {
 
-    public Sale(Product product, int amount, float price) {
-        super(product, amount, price);
+
+    public Sale() {
+
     }
 
 
+    @Override
+    public void handleBargain() {
 
+    }
 }

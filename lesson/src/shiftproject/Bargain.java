@@ -1,15 +1,13 @@
 package shiftproject;
 
-public class Market {
+public abstract class Bargain {
 
     public Product product;
     public int amount;
     public float price;
 
-    public Market(Product product, int amount, float price) {
-        this.product = product;
-        this.amount = amount;
-        this.price = price;
+    public Bargain() {
+
     }
 
     public void showProducts() {
@@ -20,4 +18,18 @@ public class Market {
         );
         System.out.println("----------");
     }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    abstract void handleBargain();
 }

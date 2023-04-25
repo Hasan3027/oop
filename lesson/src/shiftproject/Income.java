@@ -1,9 +1,15 @@
 package shiftproject;
 
-public class Income extends Market implements IUniversal{
+public class Income  extends Bargain{
 
-    public Income(Product product, int amount, float price) {
-        super(product, amount, price);
+
+    public Income() {
+
+    }
+
+    @Override
+    public void handleBargain() {
+
     }
 
 
