@@ -1,0 +1,2 @@
+# oop
+optimizatsiya qilish
